@@ -91,7 +91,7 @@ def main():
 
     # get and save FRED data if we have a fred key. 
     if fred_key:
-        macro = fetch_macro(fred_key)
+        macro = get_macro(fred_key)
         macro.to_csv(f"{DATA_RAW}/macro.csv")
 
     # quick sanity merge for aligned dataset (Week 1 deliverable)
